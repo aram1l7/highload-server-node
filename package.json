@@ -8,7 +8,7 @@
     "start": "pm2 start app.js -i max --name my-server",
     "stop": "pm2 stop my-server && pm2 delete my-server",
     "restart": "pm2 restart my-server",
-    "load-test": "artillery run artillery-config.yml"
+    "load-test": "k6 run test.js"
   },
   "keywords": [],
   "author": "",
